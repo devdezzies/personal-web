@@ -18,8 +18,8 @@ import imageSprDesignSystemLightPlaceholder from 'assets/spr-design-system-light
 import imageSprDesignSystemLight from 'assets/spr-design-system-light.png';
 import imageSprLessonBuilderDarkLarge from 'assets/spr-lesson-builder-dark-large.jpg';
 import imageSprLessonBuilderDarkPlaceholder from 'assets/spr-lesson-builder-dark-placeholder.jpg';
-import imageSprLessonBuilderDark from 'assets/spr-lesson-builder-dark.jpg';
-import imageSprLessonBuilderLightLarge from 'assets/spr-lesson-builder-light-large.jpg';
+import imageSprLessonBuilderDark from 'assets/Frame-3.png';
+import imageSprLessonBuilderLightLarge from 'assets/Frame-3.png';
 import imageSprLessonBuilderLightPlaceholder from 'assets/spr-lesson-builder-light-placeholder.jpg';
 import imageSprLessonBuilderLight from 'assets/spr-lesson-builder-light.jpg';
 import videoSprMotionLarge from 'assets/spr-motion-large.mp4';
@@ -70,14 +70,13 @@ import styles from './SmartSparrow.module.css';
 const Earth = dynamic(() => import('./Earth').then(mod => mod.Earth));
 const EarthSection = dynamic(() => import('./Earth').then(mod => mod.EarthSection));
 
-const title = 'Designing the future of education';
+const title = 'Brings new ideas into reality';
 const description =
-  'I worked as the design lead on a major iteration of Smart Sparrow’s product. We took the platform in a bold new direction, focusing on becoming the best tool for learning designers.';
+  'This is my first mobile app project, using React Native as mobile framework and integrated with codepush by Microsoft. This app have more ability to keep users up-to date with all features';
 const roles = [
-  'Art Direction',
   'UX and UI Design',
   'Front End Development',
-  'Motion Design',
+  'Mobile Development',
 ];
 
 export const SmartSparrow = () => {
@@ -104,7 +103,7 @@ export const SmartSparrow = () => {
         <ProjectHeader
           title={title}
           description={description}
-          url="https://www.smartsparrow.com/"
+          url="https://play.google.com/store/apps/details?id=com.readin"
           roles={roles}
         />
         <ProjectSection padding="top">
