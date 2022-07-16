@@ -11,6 +11,10 @@ export const navLinks = [
     label: 'Articles',
     pathname: '/articles',
   },
+  {
+    label: 'Contact',
+    pathname: '/Contact',
+  },
 ];
 
 export const socialLinks = [
