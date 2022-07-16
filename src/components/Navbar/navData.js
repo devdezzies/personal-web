@@ -20,13 +20,8 @@ export const navLinks = [
 export const socialLinks = [
   {
     label: 'Twitter',
-    url: 'https://twitter.com/nix',
+    url: 'https://twitter.com/nixrelish',
     icon: 'twitter',
-  },
-  {
-    label: 'Figma',
-    url: 'https://www.figma.com/@Hamish',
-    icon: 'figma',
   },
   {
     label: 'Github',
