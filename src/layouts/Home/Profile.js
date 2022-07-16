@@ -24,7 +24,7 @@ const ProfileText = ({ visible, titleId }) => (
       I'm Abdullah, currently I live in Indonesia working on my personal project at{' '}
       <Link href="https://play.google.com/store/apps/dev?id=7355009604149943956&hl=%3Did_id&gl=id">bite.</Link>. Focusing on Mobile
       development and mobile UI Design. Loves to learn JavaScript deeply and creating modern mobile apps. If you have a great idea about mobile app, let me help you
-      to make it real <Link href="/uses">contact</Link>.
+      to make it real <Link href="/Uses">contact</Link>.
     </Text>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
       In my spare time I like boxing and exercising, reading and watch movies. I’m always down for hearing
@@ -57,7 +57,7 @@ export const Profile = ({ id, visible, sectionRef }) => {
                 secondary
                 className={styles.button}
                 data-visible={visible}
-                href="/contact"
+                href="/Contact"
                 icon="send"
               >
                 Send me a message
