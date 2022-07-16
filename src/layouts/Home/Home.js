@@ -79,7 +79,7 @@ export const Home = () => {
         scrollIndicatorHidden={scrollIndicatorHidden}
       />
        <ProjectSummary
-        id="project-2"
+        id="project-1"
         alternate
         sectionRef={projectOne}
         visible={visibleSections.includes(projectOne.current)}
