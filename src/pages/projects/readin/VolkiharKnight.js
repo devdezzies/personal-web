@@ -23,6 +23,8 @@ import { Button } from 'components/Button';
 import { Footer } from 'components/Footer';
 import { Image } from 'components/Image';
 import { Meta } from 'components/Meta';
+import { Link } from 'components/Link';
+import { ThemeProvider, useTheme } from 'components/ThemeProvider';
 import {
   ProjectBackground,
   ProjectContainer,
@@ -91,83 +93,76 @@ export function VolkiharKnight() {
         </ProjectSection>
         <ProjectSection>
           <ProjectSectionContent>
-          <Image
-                raised
-                className={styles.video}
-                srcSet={[
-                  { src: videoSprMotion, width: 1280 },
-                  { src: videoSprMotionLarge, width: 2560 },
-                ]}
-                placeholder={videoSprMotionPlaceholder}
-                alt="A learning designer building and deploying an interactive lesson on volcanism using the app."
-                sizes={`(max-width: ${media.mobile}px) 100vw, 50vw`}
-              />
-          </ProjectSectionContent>
-        </ProjectSection>
-        <ProjectSection>
-          <ProjectSectionColumns>
-            <div className={styles.armor}>
-              <Armor alt="3D model of the Volkihar Knight armor" />
-            </div>
-            <div className={styles.textSection}>
-              <ProjectSectionHeading>Armor design</ProjectSectionHeading>
+               <ProjectTextRow>
+              <ProjectSectionHeading>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</ProjectSectionHeading>
               <ProjectSectionText>
-                As a player I noticed there weren’t any heavy armor options for the
-                Volkihar faction. This kinda sucks when you’ve specialised in heavy armor
-                and decide to join the faction and discover they all wear light armor.
-              </ProjectSectionText>
-              <ProjectSectionText>
-                My solution was to create a mod that combines meshes from the Volkihar
-                faction armor with heavy plate armor. The mod builds upon textures and
-                meshes from the base game, so it unifies with Skyrim’s overall aesthetic.
-                I combined and modified the meshes in 3DS Max. To establish a cohesive
-                design across the set, I edited existing textures, and designed custom
-                textures in Photoshop.
-              </ProjectSectionText>
-            </div>
-          </ProjectSectionColumns>
-        </ProjectSection>
-        <ProjectSection>
-          <ProjectSectionContent>
-            <div className={styles.logoContainer}>
-              <VolkiharKnightLogo
-                role="img"
-                aria-label="The Volkihar Knight logo, a monogram using the letters 'V' and 'K"
-              />
-            </div>
-            <ProjectTextRow center noMargin>
-              <ProjectSectionHeading>Identity design</ProjectSectionHeading>
-              <ProjectSectionText>
-                The monogram uses custom designed typography to get the right balance of
-                weight and angularity. I combined this with Trajan for the text, which is
-                also used for Skyrim’s game title wordmark.
+              "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores 
+              et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt 
+              mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero 
+              tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis 
+              voluptas assumenda est,{''} <Link href="https://abdullahspace.tech/">
+                  test link
+                </Link>{' '}omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus 
+              saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente 
+              delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."
               </ProjectSectionText>
             </ProjectTextRow>
           </ProjectSectionContent>
         </ProjectSection>
+        <ThemeProvider themeId="dark" data-invert>
+          <ProjectSection
+            backgroundOverlayOpacity={0.5}
+            backgroundElement={
+              <Image
+                srcSet={[volkiharEnderal, volkiharEnderalLarge]}
+                placeholder={volkiharEnderalLogoPlaceholder}
+                alt="A dramatic ocean scene with lava forming a new land mass."
+                sizes="100vw"
+              />
+            }
+          >
+            <ProjectSectionColumns width="full">
+              <ProjectSectionContent width="full">
+                <ProjectTextRow width="s">
+                  <ProjectSectionHeading>Lorem ipsum dolor sit amet</ProjectSectionHeading>
+                  <ProjectSectionText>
+                  consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                  </ProjectSectionText>
+                </ProjectTextRow>
+              </ProjectSectionContent>
+              <Image
+                raised
+                className={styles.video}
+                srcSet={[
+                  { src: videoSprMotionLarge, width: 1280 },
+                  { src: videoSprMotionLarge, width: 2560 },
+                ]}
+                placeholder={volkiharBackgroundPlaceholder}
+                alt="A learning designer building and deploying an interactive lesson on volcanism using the app."
+                sizes={`(max-width: ${media.mobile}px) 100vw, 50vw`}
+              />
+            </ProjectSectionColumns>
+          </ProjectSection>
+        </ThemeProvider>
+       
         <ProjectSection>
           <ProjectSectionContent>
             <Carousel
               placeholder={volkiharSlidePlaceholder}
               images={[
                 {
-                  srcSet: [volkiharSlide1, volkiharSlide1Large],
+                  srcSet: [volkiharBanner, volkiharBannerLarge],
                   sizes: `(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 100vw, 1096px`,
                   alt: 'A female character wearing the black coloured armor set.',
                 },
                 {
-                  srcSet: [volkiharSlide2, volkiharSlide2Large],
+                  srcSet: [volkiharBanner, volkiharBannerLarge],
                   sizes: `(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 100vw, 1096px`,
                   alt: 'A close up of the custom gauntlets design.',
                 },
-                {
-                  srcSet: [volkiharSlide3, volkiharSlide3Large],
-                  sizes: `(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 100vw, 1096px`,
-                  alt: 'A female character wielding a sword and wearing the red coloured armor.',
-                },
               ]}
-              width={1920}
-              height={1080}
+              width={3200}
+              height={2400}
             />
           </ProjectSectionContent>
         </ProjectSection>
