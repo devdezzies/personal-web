@@ -8,13 +8,6 @@ import volkiharEnderalLogoPlaceholder from 'assets/volkihar-enderal-logo-placeho
 import volkiharEnderalLogo from 'assets/biteLogo.png';
 import volkiharEnderalPlaceholder from 'assets/volkihar-enderal-placeholder.jpg';
 import volkiharEnderal from 'assets/bite-bg.jpg';
-import VolkiharKnightLogo from 'assets/volkihar-logo.svg';
-import volkiharSlide1Large from 'assets/volkihar-slide-1-large.jpg';
-import volkiharSlide1 from 'assets/volkihar-slide-1.jpg';
-import volkiharSlide2Large from 'assets/volkihar-slide-2-large.jpg';
-import volkiharSlide2 from 'assets/volkihar-slide-2.jpg';
-import volkiharSlide3Large from 'assets/volkihar-slide-3-large.jpg';
-import volkiharSlide3 from 'assets/volkihar-slide-3.jpg';
 import volkiharSlidePlaceholder from 'assets/volkihar-slide-placeholder.jpg';
 import videoSprMotionLarge from 'assets/readin-bg.mp4';
 import videoSprMotionPlaceholder from 'assets/spr-motion-placeholder.jpg';
@@ -100,7 +93,7 @@ export function VolkiharKnight() {
               et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt 
               mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero 
               tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis 
-              voluptas assumenda est,{''} <Link href="https://abdullahspace.tech/">
+              voluptas assumenda est,{' '} <Link href="https://abdullahspace.tech/">
                   test link
                 </Link>{' '}omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus 
               saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente 
@@ -134,7 +127,7 @@ export function VolkiharKnight() {
                 raised
                 className={styles.video}
                 srcSet={[
-                  { src: videoSprMotionLarge, width: 1280 },
+                  { src: videoSprMotion, width: 1280 },
                   { src: videoSprMotionLarge, width: 2560 },
                 ]}
                 placeholder={volkiharBackgroundPlaceholder}
