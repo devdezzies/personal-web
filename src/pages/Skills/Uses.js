@@ -16,7 +16,14 @@ import {
   ProjectTextRow,
 } from 'layouts/Project';
 import { Fragment } from 'react';
+import dynamic from 'next/dynamic';
+import { media } from 'utils/style';
+import volkiharBannerLarge from 'assets/ReadInDark.png';
+import volkiharBanner from 'assets/ReadInDark.png';
+import volkiharSlidePlaceholder from 'assets/volkihar-slide-placeholder.jpg';
 import styles from './Uses.module.css';
+
+const Carousel = dynamic(() => import('components/Carousel').then(mod => mod.Carousel));
 
 export const Uses = () => {
   return (
@@ -38,6 +45,25 @@ export const Uses = () => {
           some mobile User Interfaces with Adobe Xd. After a few years, I decided to learn JavaScript deeply and build my first mobile app when I was in High School
           and release the app on the play store (still available)."
         />
+        <ProjectSection padding="none" className={styles.section}>
+          <ProjectSectionContent>
+            <ProjectTextRow stretch width="m">
+              <ProjectSectionHeading>Events</ProjectSectionHeading>
+              <Table>
+                <TableBody>
+                  <TableRow>
+                  <TableHeadCell>November 2, 2019</TableHeadCell>
+                    <TableCell>Computer Problem Solving Competition IPB University</TableCell>
+                  </TableRow>
+                  <TableRow>
+                  <TableHeadCell>October 15, 2021</TableHeadCell>
+                    <TableCell>Computer Problem Solving Competition IPB University</TableCell>
+                  </TableRow>
+                </TableBody>
+              </Table>
+            </ProjectTextRow>
+          </ProjectSectionContent>
+        </ProjectSection>
         <ProjectSection padding="none" className={styles.section}>
           <ProjectSectionContent>
             <ProjectTextRow width="m">
@@ -76,6 +102,28 @@ export const Uses = () => {
             </ProjectTextRow>
           </ProjectSectionContent>
         </ProjectSection>
+        {/* <ProjectSection>
+          <ProjectSectionContent>
+          <ProjectSectionHeading>Certificates</ProjectSectionHeading>
+            <Carousel
+              placeholder={volkiharSlidePlaceholder}
+              images={[
+                {
+                  srcSet: [volkiharBanner, volkiharBannerLarge],
+                  sizes: `(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 100vw, 1096px`,
+                  alt: 'A female character wearing the black coloured armor set.',
+                },
+                {
+                  srcSet: [volkiharBanner, volkiharBannerLarge],
+                  sizes: `(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 100vw, 1096px`,
+                  alt: 'A close up of the custom gauntlets design.',
+                },
+              ]}
+              width={3200}
+              height={2400}
+            />
+          </ProjectSectionContent>
+        </ProjectSection> */}
         <ProjectSection padding="none" className={styles.section}>
           <ProjectSectionContent>
             <ProjectTextRow stretch width="m">
@@ -109,6 +157,13 @@ export const Uses = () => {
                       <Link href="https://www.instagram.com/davidjmalan/?hl=en">David J. Malan</Link>
                     </TableHeadCell>
                     <TableCell>Introduction to Computer Science</TableCell>
+                  </TableRow>
+                  <TableRow>
+                    <TableHeadCell>Frontend Masters</TableHeadCell>
+                    <TableHeadCell>
+                      <Link href="https://abdullahspace.tech/">Nina Zakharenko</Link>
+                    </TableHeadCell>
+                    <TableCell>Git In-depth</TableCell>
                   </TableRow>
                 </TableBody>
               </Table>
