@@ -77,6 +77,11 @@ export const Home = () => {
         disciplines={disciplines}
         scrollIndicatorHidden={scrollIndicatorHidden}
       />
+      <Profile
+        sectionRef={details}
+        visible={visibleSections.includes(details.current)}
+        id="details"
+      />
        <ProjectSummary
         id="project-1"
         alternate
@@ -85,8 +90,8 @@ export const Home = () => {
         index={1}
         title="ReadIn - Modern News App"
         description="Design and development for a news app in React Native"
-        buttonText="View website"
-        buttonLink="/" // -> /projects/smart-sparrow
+        buttonText="View release"
+        buttonLink="https://play.google.com/store/apps/details?id=com.readin&hl=%3Did_id&gl=id" // -> /projects/smart-sparrow
         model={{
           type: 'phone',
           alt: 'App login screen',
@@ -111,7 +116,7 @@ export const Home = () => {
         title="ReadIn - Modern News App"
         description="Design and development for a news app in React Native"
         buttonText="View website"
-        buttonLink="/" // -> /projects/smart-sparrow
+        buttonLink="/projects/readin" // -> /projects/smart-sparrow
         model={{
           type: 'phone',
           alt: 'App login screen',
@@ -151,11 +156,6 @@ export const Home = () => {
             },
           ],
         }}
-      />
-      <Profile
-        sectionRef={details}
-        visible={visibleSections.includes(details.current)}
-        id="details"
       />
       <Footer />
     </div>
