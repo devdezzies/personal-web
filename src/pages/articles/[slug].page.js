@@ -12,6 +12,9 @@ import { POSTS_PATH, postFilePaths } from 'utils/mdx';
 import { formatTimecode } from 'utils/timecode';
 import rehypePrism from '@mapbox/rehype-prism';
 import { generateOgImage } from './og-image';
+import Script from 'next/script';
+import { Section } from 'components/Section';
+import styles from './Articles.module.css';
 
 export default function PostPage({ frontmatter, code, timecode, ogImage }) {
   const MDXComponent = useMemo(() => getMDXComponent(code), [code]);
@@ -19,6 +22,24 @@ export default function PostPage({ frontmatter, code, timecode, ogImage }) {
   return (
     <Post timecode={timecode} ogImage={ogImage} {...frontmatter}>
       <MDXComponent components={postMarkdown} />
+
+      <Script type="module" src="https://unpkg.com/giscus?module"></Script>
+      <giscus-widget
+        src="https://giscus.app/client.js"
+        repo="devdezzies/personal-web"
+        repo-id="R_kgDOHqpdRA"
+        category="General"
+        category-id="DIC_kwDOHqpdRM4CQTLJ"
+        mapping="${params.slug}.mdx"
+        reactions-enabled="1"
+        emit-metadata="0"
+        input-position="top"
+        theme="dark"
+        lang="en"
+        crossorigin="anonymous"
+        async
+        style={{marginTop: 50}}
+      ></giscus-widget>
     </Post>
   );
 }

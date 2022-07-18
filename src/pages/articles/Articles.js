@@ -191,6 +191,7 @@ export const Articles = ({ posts, featured }) => {
             {postList}
           </div>
         )}
+        
       </Section>
       <Footer />
     </article>
