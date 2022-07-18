@@ -81,6 +81,7 @@ export const Contact = () => {
             >
               <DecoderText text="Say hello" start={status !== 'exited'} delay={300} />
             </Heading>
+            
             <Divider
               className={styles.divider}
               data-status={status}
