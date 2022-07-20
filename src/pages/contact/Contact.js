@@ -23,6 +23,7 @@ export const Contact = () => {
   const [complete, setComplete] = useState(false);
   const [statusError, setStatusError] = useState('');
   const initDelay = tokens.base.durationS;
+ 
 
   const onSubmit = async event => {
     event.preventDefault();
