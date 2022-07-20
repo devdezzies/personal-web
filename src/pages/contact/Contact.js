@@ -33,9 +33,8 @@ export const Contact = () => {
     try {
       setSending(true);
 
-      const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/message`, {
+      const response = await fetch('/api/contact', {
         method: 'POST',
-        mode: 'cors',
         headers: {
           'Content-Type': 'application/json',
         },
@@ -62,6 +61,7 @@ export const Contact = () => {
       setStatusError(error.message);
     }
   };
+
 
   return (
     <Section className={styles.contact}>

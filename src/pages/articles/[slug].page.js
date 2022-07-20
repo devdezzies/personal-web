@@ -14,13 +14,12 @@ import rehypePrism from '@mapbox/rehype-prism';
 import { generateOgImage } from './og-image';
 import Script from 'next/script';
 
-export default function PostPage({ frontmatter, code, timecode, ogImage }) {
+export default function PostPage({ frontmatter, code, timecode, ogImage}) {
   const MDXComponent = useMemo(() => getMDXComponent(code), [code]);
 
   return (
     <Post timecode={timecode} ogImage={ogImage} {...frontmatter}>
       <MDXComponent components={postMarkdown} />
-
       <Script type="module" src="https://unpkg.com/giscus?module"></Script>
       <giscus-widget
         src="https://giscus.app/client.js"
