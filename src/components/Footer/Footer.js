@@ -13,6 +13,7 @@ export const Footer = ({ className }) => (
         id="tz24-1658359276-c213124-eyJob3VydHlwZSI6IjEyIiwic2hvd2RhdGUiOiIxIiwic2hvd3NlY29uZHMiOiIxIiwic2hvd3RpbWV6b25lIjoiMSIsInR5cGUiOiJkIiwibGFuZyI6ImVuIn0="
         title="Bogor timezone"
         target="_blank"
+        rel="noreferrer"
         
       >
         Bogor    
