@@ -9,11 +9,12 @@ export const Footer = ({ className }) => (
   <footer className={classes(styles.footer, className)}>
     <Text size="s" align="center">
     <span className={styles.date}>
-        {`© ${new Date().getFullYear()} Hamish Williams.`} 
+        Say hello👋  
       </span>
-      <Link secondary className={styles.link} href="/humans.txt" target="_self">
-        Crafted by Abdullah
-      </Link>
+
+      <Link secondary className={styles.link} href="mailto:boltholt17@gmail.com" target="_self">
+        hello@abdullahspace.tech
+      </Link>   
     </Text>
   </footer>
 );

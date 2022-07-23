@@ -19,4 +19,5 @@
 .date {
   padding-right: var(--spaceXS);
   display: inline-flex;
+  animation: textrotate 5s linear infinite;
 }
