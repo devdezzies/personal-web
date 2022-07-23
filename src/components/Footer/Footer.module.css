@@ -14,10 +14,45 @@
 
 .link {
   display: inline-flex;
+  
 }
 
 .date {
   padding-right: var(--spaceXS);
   display: inline-flex;
   animation: textrotate 5s linear infinite;
+}
+
+.main{
+  padding-right: var(--spaceXS);
+  display: inline-flex;
+  animation: textrotate 5s linear infinite;
+}
+.main::after{
+  content: ' ';
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  background: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-clip: text;
+	-webkit-text-fill-color: transparent;
+  animation: textrotate 10s linear infinite;
+  -webkit-animation: textrotate 5s linear infinite ease-in-out;
+}
+@keyframes textrotate{
+  0%{
+    content: "ideas"; 
+  }
+  50%{
+    content: "jokes";
+  }
+  100%{
+    content: "bold visions";
+  }
 }

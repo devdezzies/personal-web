@@ -4,13 +4,19 @@ import { classes } from 'utils/style';
 import styles from './Footer.module.css';
 import Script from 'next/script';
 import Head from 'next/head';
+import { fontStyles } from 'components/ThemeProvider';
 
 export const Footer = ({ className }) => (
   <footer className={classes(styles.footer, className)}>
     <Text size="s" align="center">
-    <span className={styles.date}>
-        Say hello👋  
+      <span className={styles.date}>
+        Send me your
       </span>
+    <span className={styles.main}>
+         
+      </span>
+      
+  
 
       <Link secondary className={styles.link} href="mailto:boltholt17@gmail.com" target="_self">
         hello@abdullahspace.tech
