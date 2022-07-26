@@ -42,7 +42,7 @@
   );
   background-clip: text;
 	-webkit-text-fill-color: transparent;
-  animation: textrotate 10s linear infinite;
+  animation: textrotate 5s linear infinite;
   -webkit-animation: textrotate 5s linear infinite ease-in-out;
 }
 @keyframes textrotate{
