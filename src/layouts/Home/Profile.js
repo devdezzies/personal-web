@@ -1,6 +1,6 @@
 import profileKatakana from 'assets/katakana-profile.svg?url';
 import profileImgLarge from 'assets/profil.png';
-import profileImgPlaceholder from 'assets/profile-placeholder.jpg';
+import profileImgPlaceholder from 'assets/profile-placeholder.png';
 import profileImg from 'assets/profil.png';
 import { Button } from 'components/Button';
 import { DecoderText } from 'components/DecoderText';
@@ -22,12 +22,12 @@ const ProfileText = ({ visible, titleId }) => (
     </Heading>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
       I'm Abdullah, currently I live in Indonesia working on my personal project at{' '}
-      <Link href="https://play.google.com/store/apps/dev?id=7355009604149943956&hl=%3Did_id&gl=id">bite.</Link>. Focusing on Mobile
-      development and mobile UI Design. Loves to learn JavaScript deeply and creating modern mobile apps. If you have a great idea about mobile app, let me help you
-      to make it real <Link href="/articles">contact</Link>.
+      <Link href="https://play.google.com/store/apps/dev?id=7355009604149943956&hl=%3Did_id&gl=id">bite.</Link>. I like to explore about
+      technology and science, my hobbies are coding and reading non-fiction books. I'm recently starting to explore about mobile
+      development—focusing as Frontend Engineer with focus on modern mobile app features such as creating modern UI design and interactive features.
     </Text>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-      In my spare time I like boxing and exercising, reading and watch movies. I’m always down for hearing
+      In my spare time I like boxing and another cardio and weight exercises, also reading books and watch movies. I’m always down for hearing
       about new projects, so feel free to drop me a line.
     </Text>
   </Fragment>

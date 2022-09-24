@@ -41,9 +41,9 @@ export const Uses = () => {
         <ProjectHeader
           title="My Journey"
           description="My first journey as a tech enthusiast starts when I was 15, since junior high school I had an interest in computer programming. My first programming
-          language I learnt is Python, but I'm not deeply learning that language (just for fun). At first, my journey as a tech enthusiast is diving into UI design and create 
-          some mobile User Interfaces with Adobe Xd. After a few years, I decided to learn JavaScript deeply and build my first mobile app when I was in High School
-          and release the app on the play store (still available)."
+          language I learnt is Python, but I'm not deeply learning that language or just for fun. At first, my journey as a tech enthusiast is diving into UI design and create 
+          some mobile User Interfaces with Adobe Xd. After a few years, I decided to learn JavaScript and build my first mobile app when I was in High School
+          and release the app on play store (still available)."
         />
         <ProjectSection padding="none" className={styles.section}>
           <ProjectSectionContent>
@@ -72,7 +72,7 @@ export const Uses = () => {
                 <List>
                   <ListItem>
                   Recent JavaScript, JavaScript is my primary programming
-                    language, I learn deeply and experimenting a lot with this language.
+                    language, I learnt and experimenting a lot with this language.
                   </ListItem>
                   <ListItem>
                     HTML and CSS

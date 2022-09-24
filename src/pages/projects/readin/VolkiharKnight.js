@@ -178,10 +178,12 @@ export function VolkiharKnight() {
                 sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 100vw, 220px`}
                 style={{ maxWidth: 220, width: '100%', marginBottom: 30 }}
               />
-              <ProjectSectionHeading>Product by Bite.</ProjectSectionHeading>
+              <ProjectSectionHeading>A Product by Bite.</ProjectSectionHeading>
               <ProjectSectionText>
-              This app is already released on the play store, this is a non-profit App. Created for education purposes. If you want to support us,
-                we are always happy to hear ideas or suggestions. We are growth from every ideas and imaginations
+              After a few months of 1st release date, our first application finally hit first 100 users when we released readin v3.0. This app 
+              doesn't contain any advertisements and still as a non-profit app. This app actually is an our testing app, in order to experimenting
+              about android apps and a case study for react native project. This app was created only for educational purpose.
+              
               </ProjectSectionText>
               <Button
                 secondary
