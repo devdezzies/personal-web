@@ -181,7 +181,7 @@ export function VolkiharKnight() {
               <ProjectSectionHeading>A Product by Bite.</ProjectSectionHeading>
               <ProjectSectionText>
               After a few months of 1st release date, our first application finally hit first 100 users when we released readin v3.0. This app 
-              doesn't contain any advertisements and still as a non-profit app. This app actually is an our testing app, in order to experimenting
+              doesnt contain any advertisements and still as a non-profit app. This app actually is an our testing app, in order to experimenting
               about android apps and a case study for react native project. This app was created only for educational purpose.
               
               </ProjectSectionText>
