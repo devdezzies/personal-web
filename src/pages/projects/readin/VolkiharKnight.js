@@ -9,9 +9,10 @@ import volkiharEnderalLogo from 'assets/biteLogo.png';
 import volkiharEnderalPlaceholder from 'assets/volkihar-enderal-placeholder.jpg';
 import volkiharEnderal from 'assets/bite-bg.jpg';
 import volkiharSlidePlaceholder from 'assets/volkihar-slide-placeholder.jpg';
-import videoSprMotionLarge from 'assets/readin-bg.mp4';
+import videoSprMotionLarge from 'assets/m-test.mp4';
+import videoSprMotionBanner from 'assets/uses-background-x.mp4';
 import videoSprMotionPlaceholder from 'assets/spr-motion-placeholder.jpg';
-import videoSprMotion from 'assets/readin-bg.mp4';
+import videoSprMotion from 'assets/m-test.mp4';
 import { Button } from 'components/Button';
 import { Footer } from 'components/Footer';
 import { Image } from 'components/Image';
@@ -63,7 +64,7 @@ export function VolkiharKnight() {
       />
       <ProjectContainer>
         <ProjectBackground
-          src={{ src: videoSprMotionLarge }}
+          src={{ src: videoSprMotionBanner }}
           placeholder={volkiharBackgroundPlaceholder}
           opacity={0.5}
         />
@@ -114,10 +115,11 @@ export function VolkiharKnight() {
               />
             }
           >
+            
             <ProjectSectionColumns width="full">
               <ProjectSectionContent width="full">
                 <ProjectTextRow width="s">
-                  <ProjectSectionHeading>Lorem ipsum dolor sit amet</ProjectSectionHeading>
+                  <ProjectSectionHeading>Trying to make a song LOL</ProjectSectionHeading>
                   <ProjectSectionText>
                   consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
                   </ProjectSectionText>
@@ -127,7 +129,7 @@ export function VolkiharKnight() {
                 raised
                 className={styles.video}
                 srcSet={[
-                  { src: videoSprMotion, width: 1280 },
+                  { src: videoSprMotion, width: 1280, },
                   { src: videoSprMotionLarge, width: 2560 },
                 ]}
                 placeholder={volkiharBackgroundPlaceholder}

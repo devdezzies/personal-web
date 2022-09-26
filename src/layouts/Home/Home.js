@@ -17,7 +17,6 @@ import { Profile } from 'layouts/Home/Profile';
 import { ProjectSummary } from 'layouts/Home/ProjectSummary';
 import { useEffect, useRef, useState } from 'react';
 import styles from './Home.module.css';
-
 const disciplines = ['Writer', 'UI Designer'];
 
 export const Home = () => {
@@ -69,7 +68,7 @@ export const Home = () => {
     <div className={styles.home}>
       <Meta
         title="Frontend Engineer"
-        description="Collections of projects, articles and ideas."
+        description="Collections of projects, articles, and ideas."
       />
       <Intro
         id="intro"
@@ -82,6 +81,7 @@ export const Home = () => {
         visible={visibleSections.includes(details.current)}
         id="details"
       />
+      
        <ProjectSummary
         id="project-1"
         alternate
