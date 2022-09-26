@@ -1,5 +1,4 @@
 import usesBackgroundPlaceholder from 'assets/uses-background-placeholder.jpg';
-import usesBackground from 'assets/uses-background-x.mp4';
 import { Footer } from 'components/Footer';
 import { Link } from 'components/Link';
 import { List, ListItem } from 'components/List';
@@ -34,7 +33,7 @@ export const Uses = () => {
       />
       <ProjectContainer className={styles.uses}>
         <ProjectBackground
-          src={{ src: usesBackground }}
+          src={{ src: 'https://vid-share.s3.us-east-1.wasabisys.com/8Ddazb9taC.mp4' }}
           placeholder={usesBackgroundPlaceholder}
           opacity={0.7}
         />

@@ -9,10 +9,9 @@ import volkiharEnderalLogo from 'assets/biteLogo.png';
 import volkiharEnderalPlaceholder from 'assets/volkihar-enderal-placeholder.jpg';
 import volkiharEnderal from 'assets/bite-bg.jpg';
 import volkiharSlidePlaceholder from 'assets/volkihar-slide-placeholder.jpg';
-import videoSprMotionLarge from 'assets/m-test-x.mp4';
-import videoSprMotionBanner from 'assets/uses-background-x.mp4';
 import videoSprMotionPlaceholder from 'assets/spr-motion-placeholder.jpg';
-import videoSprMotion from 'assets/m-test-x.mp4';
+
+
 import { Button } from 'components/Button';
 import { Footer } from 'components/Footer';
 import { Image } from 'components/Image';
@@ -64,7 +63,7 @@ export function VolkiharKnight() {
       />
       <ProjectContainer>
         <ProjectBackground
-          src={{ src: videoSprMotionBanner }}
+          src={{ src: 'https://vid-share.s3.us-east-1.wasabisys.com/8Ddazb9taC.mp4' }}
           placeholder={volkiharBackgroundPlaceholder}
           opacity={0.5}
         />
@@ -129,8 +128,8 @@ export function VolkiharKnight() {
                 raised
                 className={styles.video}
                 srcSet={[
-                  { src: videoSprMotion, width: 1280, },
-                  { src: videoSprMotionLarge, width: 2560 },
+                  { src: 'https://vid-share.s3.us-east-1.wasabisys.com/pmrhK0RBhX.mp4', width: 1280, },
+                  { src: 'https://vid-share.s3.us-east-1.wasabisys.com/pmrhK0RBhX.mp4', width: 2560 },
                 ]}
                 placeholder={volkiharBackgroundPlaceholder}
                 alt="A learning designer building and deploying an interactive lesson on volcanism using the app."
