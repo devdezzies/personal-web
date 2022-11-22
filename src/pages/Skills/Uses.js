@@ -68,7 +68,7 @@ export const Uses = () => {
                 <List>
                   <ListItem>
                   Recent JavaScript, JavaScript is my primary programming
-                    language, I learnt and experimenting a lot with this language.
+                    language.
                   </ListItem>
                   <ListItem>
                     HTML and CSS
