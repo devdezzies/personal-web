@@ -38,11 +38,8 @@ export const Uses = () => {
           opacity={0.7}
         />
         <ProjectHeader
-          title="My Journey"
-          description="My first journey as a tech enthusiast starts when I was 15, since junior high school I had an interest in computer programming. My first programming
-          language I learnt is Python, but I'm not deeply learning that language or just for fun. At first, my journey as a tech enthusiast is diving into UI design and create 
-          some mobile User Interfaces with Adobe Xd. After a few years, I decided to learn JavaScript and build my first mobile app when I was in High School
-          and release the app on play store (still available)."
+          title="Foreword"
+          description="Hi, I’m Abdullah, a student who is always looking for ways to find ideas and execute them better. I’m focusing on mobile development as a frontend engineer, I’m currently working on my personal project and doing some stuff in order to get and share with others also devoting myself to being a lifelong learner."
         />
         <ProjectSection padding="none" className={styles.section}>
           <ProjectSectionContent>
