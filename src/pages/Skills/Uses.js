@@ -39,7 +39,7 @@ export const Uses = () => {
         />
         <ProjectHeader
           title="Foreword"
-          description="Hi, I’m Abdullah, a student who is always looking for ways to find ideas and execute them better. I’m focusing on mobile development as a frontend engineer, I’m currently working on my personal project and doing some stuff in order to get and share with others also devoting myself to being a lifelong learner."
+          description="Hi, I’m Abdullah, a student who is always looking for ways to find ideas and execute them better. I’m focusing on mobile development as a frontend developer, I’m currently working on my project and doing some stuff to learn and share with others also devoting myself to being a lifelong learner. "
         />
         <ProjectSection padding="none" className={styles.section}>
           <ProjectSectionContent>
