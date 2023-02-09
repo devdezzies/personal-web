@@ -21,14 +21,11 @@ const ProfileText = ({ visible, titleId }) => (
       <DecoderText text="Hi there 👋" start={visible} delay={500} />
     </Heading>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-      I'm Abdullah, currently I live in Indonesia working on my personal project at{' '}
-      <Link href="https://play.google.com/store/apps/dev?id=7355009604149943956&hl=%3Did_id&gl=id">bite.</Link>. I like to explore about
-      technology and science, my hobbies are coding and reading non-fiction books. I'm recently starting to explore about mobile
-      development—focusing as Frontend Engineer with focus on modern mobile app features such as creating modern UI design and interactive features.
+    Hello, my name is Abdullah, and I currently reside in Indonesia where I am actively working on a personal project at{' '}
+      <Link href="https://play.google.com/store/apps/dev?id=7355009604149943956&hl=%3Did_id&gl=id">bite.</Link>. As a technology and science enthusiast, I have a strong passion for coding and devouring non-fiction books. I am recently venturing into the realm of mobile development, honing my skills as a Frontend Engineer with a focus on creating visually appealing UI designs and interactive features that align with modern mobile app trends.
     </Text>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-      In my spare time I like boxing and another cardio and weight exercises, also reading books and watch movies. I’m always down for hearing
-      about new projects, so feel free to drop me a line.
+    In my leisure time, I indulge in a combination of high-intensity cardio and weightlifting, as well as indulging in my love for literature and cinema. When it comes to books, I have a soft spot for biographies and motivational works, while my movie preferences lean towards action-packed thrillers. I'm always eager to expand my horizons, so don't hesitate to share your latest and greatest projects with me.
     </Text>
   </Fragment>
 );
