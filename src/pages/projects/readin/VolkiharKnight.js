@@ -103,7 +103,7 @@ export function VolkiharKnight() {
           </ProjectSectionContent>
         </ProjectSection>
         <ThemeProvider themeId="dark" data-invert>
-          <ProjectSection
+          {/* <ProjectSection
             backgroundOverlayOpacity={0.5}
             backgroundElement={
               <Image
@@ -115,7 +115,7 @@ export function VolkiharKnight() {
             }
           >
             
-            {/* <ProjectSectionColumns width="full">
+            <ProjectSectionColumns width="full">
               <ProjectSectionContent width="full">
                 <ProjectTextRow width="s">
                   <ProjectSectionHeading>Trying to make a song LOL</ProjectSectionHeading>
@@ -135,8 +135,8 @@ export function VolkiharKnight() {
                 alt="A learning designer building and deploying an interactive lesson on volcanism using the app."
                 sizes={`(max-width: ${media.mobile}px) 100vw, 50vw`}
               />
-            </ProjectSectionColumns> */}
-          </ProjectSection>
+            </ProjectSectionColumns> 
+          </ProjectSection> */}
         </ThemeProvider>
        
         <ProjectSection>

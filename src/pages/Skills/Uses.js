@@ -33,7 +33,7 @@ export const Uses = () => {
       />
       <ProjectContainer className={styles.uses}>
         <ProjectBackground
-          src={{ src: 'https://vid-share.s3.us-east-1.wasabisys.com/8Ddazb9taC.mp4' }}
+          src={{ src: 'https://images.unsplash.com/photo-1508633069371-a735f885a1c7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=869&q=80' }}
           placeholder={usesBackgroundPlaceholder}
           opacity={0.7}
         />
@@ -48,8 +48,6 @@ export const Uses = () => {
           I invite you to explore my website and delve into my projects, ideas, and insights. Together, let's embark on a path of discovery, growth, and positive change.
           
           Thank you for visiting, and I look forward to connecting with you!
-          
-          Abdullah    
           "
         />
         <ProjectSection padding="none" className={styles.section}>
