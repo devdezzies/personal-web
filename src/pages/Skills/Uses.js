@@ -39,7 +39,18 @@ export const Uses = () => {
         />
         <ProjectHeader
           title="Foreword"
-          description="Hi, I’m Abdullah, a student who is always looking for ways to find ideas and execute them better. I’m focusing on mobile development as a frontend developer, I’m currently working on my project and doing some stuff to learn and share with others also devoting myself to being a lifelong learner. "
+          description="Welcome to my personal website! My name is Abdullah, and I am thrilled to have you here. I reside in the vibrant city of Bogor, Indonesia, where I pursue my passion for programming and design. My primary focus lies in developing integrated mobile applications and crafting modern UI applications that merge functionality with aesthetic appeal.
+
+          Beyond my technological endeavors, I am deeply intrigued by the realms of psychology and cognitive sciences. Exploring the intricate workings of the human mind fascinates me, and I believe that understanding these aspects can contribute to creating solutions that enhance the quality of life. My ultimate goal is to develop tools and innovations that empower individuals, fostering healthier lifestyles, efficiency, and stronger connections with others.
+          
+          From my own perspective, I embody a range of qualities that drive my journey. I consider myself to be creative, constantly seeking innovative approaches to problem-solving. As a social individual, I thrive in collaborative environments and cherish the opportunity to connect with like-minded individuals. I am a lifelong learner, always eager to expand my knowledge and acquire new skills. Lastly, I approach my work with meticulous attention to detail, ensuring thoroughness in every aspect.
+          
+          I invite you to explore my website and delve into my projects, ideas, and insights. Together, let's embark on a path of discovery, growth, and positive change.
+          
+          Thank you for visiting, and I look forward to connecting with you!
+          
+          Abdullah    
+          "
         />
         <ProjectSection padding="none" className={styles.section}>
           <ProjectSectionContent>

@@ -63,7 +63,7 @@ export function VolkiharKnight() {
       />
       <ProjectContainer>
         <ProjectBackground
-          src={{ src: 'https://vid-share.s3.us-east-1.wasabisys.com/jUEw2JBmtl.mp4' }}
+          src={{ src: 'https://images.unsplash.com/photo-1435686858161-59da32dfd4b4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1474&q=80' }}
           placeholder={volkiharBackgroundPlaceholder}
           opacity={0.5}
         />
@@ -115,7 +115,7 @@ export function VolkiharKnight() {
             }
           >
             
-            <ProjectSectionColumns width="full">
+            {/* <ProjectSectionColumns width="full">
               <ProjectSectionContent width="full">
                 <ProjectTextRow width="s">
                   <ProjectSectionHeading>Trying to make a song LOL</ProjectSectionHeading>
@@ -135,7 +135,7 @@ export function VolkiharKnight() {
                 alt="A learning designer building and deploying an interactive lesson on volcanism using the app."
                 sizes={`(max-width: ${media.mobile}px) 100vw, 50vw`}
               />
-            </ProjectSectionColumns>
+            </ProjectSectionColumns> */}
           </ProjectSection>
         </ThemeProvider>
        
