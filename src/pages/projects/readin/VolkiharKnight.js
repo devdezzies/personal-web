@@ -87,17 +87,17 @@ export function VolkiharKnight() {
         <ProjectSection>
           <ProjectSectionContent>
                <ProjectTextRow>
-              <ProjectSectionHeading>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</ProjectSectionHeading>
+              <ProjectSectionHeading>Introducing ReadIn: Your Ultimate News Aggregator</ProjectSectionHeading>
               <ProjectSectionText>
-              At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores 
-              et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt 
-              mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero 
-              tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis 
-              voluptas assumenda est,{' '} <Link href="https://abdullahspace.tech/">
-                  test link
-                </Link>{' '}omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus 
-              saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente 
-              delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
+              Discover the power of knowledge with ReadIn, the ultimate news aggregator app that brings you curated news from a wide range of top-notch sources. With its modern design and user-friendly interface, ReadIn provides you with the latest news updates and ensures an engaging reading experience.
+          <br></br>
+          <br></br>
+          Note:
+ReadIn aggregates news from various reputable sources, directing you to the original pages for each news article. Rest assured that you're accessing reliable information from reliable publishers.
+
+Download ReadIn now and experience the power of a comprehensive news aggregator at your fingertips. Stay informed, empowered, and engaged with the world around you.
+
+             
               </ProjectSectionText>
             </ProjectTextRow>
           </ProjectSectionContent>
@@ -181,9 +181,7 @@ export function VolkiharKnight() {
               />
               <ProjectSectionHeading>A Product by Bite.</ProjectSectionHeading>
               <ProjectSectionText>
-              After a few months of 1st release date, our first application finally hit first 100 users when we released readin v3.0. This app 
-              doesnt contain any advertisements and still as a non-profit app. This app actually is an our testing app, in order to experimenting
-              about android apps and a case study for react native project. This app was created only for educational purpose.
+              After several months since its initial release, ReadIn v3.0 has reached a significant milestone, attracting its first 100 users. It's important to note that ReadIn remains an ad-free, non-profit application. The app serves as a testing ground for our Android app development and acts as a case study for our React Native project. It was primarily created for educational purposes, allowing us to experiment and gain valuable insights in the world of Android apps.
               
               </ProjectSectionText>
               <Button
