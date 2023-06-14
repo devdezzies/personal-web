@@ -181,7 +181,7 @@ Download ReadIn now and experience the power of a comprehensive news aggregator 
               />
               <ProjectSectionHeading>A Product by Bite.</ProjectSectionHeading>
               <ProjectSectionText>
-              After several months since its initial release, ReadIn v3.0 has reached a significant milestone, attracting its first 100 users. It's important to note that ReadIn remains an ad-free, non-profit application. The app serves as a testing ground for our Android app development and acts as a case study for our React Native project. It was primarily created for educational purposes, allowing us to experiment and gain valuable insights in the world of Android apps.
+              After several months since its initial release, ReadIn v3.0 has reached a significant milestone, attracting its first 100 users. It is important to note that ReadIn remains an ad-free, non-profit application. The app serves as a testing ground for our Android app development and acts as a case study for our React Native project. It was primarily created for educational purposes, allowing us to experiment and gain valuable insights in the world of Android apps.
               
               </ProjectSectionText>
               <Button
