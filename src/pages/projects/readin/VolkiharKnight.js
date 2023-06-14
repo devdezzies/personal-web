@@ -93,7 +93,7 @@ export function VolkiharKnight() {
           <br></br>
           <br></br>
           Note:
-ReadIn aggregates news from various reputable sources, directing you to the original pages for each news article. Rest assured that you're accessing reliable information from reliable publishers.
+ReadIn aggregates news from various reputable sources, directing you to the original pages for each news article. Rest assured that you are accessing reliable information from reliable publishers.
 
 Download ReadIn now and experience the power of a comprehensive news aggregator at your fingertips. Stay informed, empowered, and engaged with the world around you.
 
