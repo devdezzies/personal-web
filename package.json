@@ -38,6 +38,7 @@
   },
   "dependencies": {
     "@giscus/react": "^2.0.6",
+    "emailjs": "^4.0.2",
     "fathom-client": "^3.4.1",
     "framer-motion": "^6.3.3",
     "mdx-bundler": "^9.0.0",
