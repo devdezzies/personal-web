@@ -15,14 +15,14 @@ import {
   ProjectTextRow,
 } from 'layouts/Project';
 import { Fragment } from 'react';
-import dynamic from 'next/dynamic';
-import { media } from 'utils/style';
-import volkiharBannerLarge from 'assets/ReadInDark.png';
-import volkiharBanner from 'assets/ReadInDark.png';
-import volkiharSlidePlaceholder from 'assets/volkihar-slide-placeholder.jpg';
+//import dynamic from 'next/dynamic';
+//import { media } from 'utils/style';
+//import volkiharBannerLarge from 'assets/ReadInDark.png';
+//import volkiharBanner from 'assets/ReadInDark.png';
+//import volkiharSlidePlaceholder from 'assets/volkihar-slide-placeholder.jpg';
 import styles from './Uses.module.css';
 
-const Carousel = dynamic(() => import('components/Carousel').then(mod => mod.Carousel));
+//const Carousel = dynamic(() => import('components/Carousel').then(mod => mod.Carousel));
 
 export const Uses = () => {
   return (
@@ -33,7 +33,9 @@ export const Uses = () => {
       />
       <ProjectContainer className={styles.uses}>
         <ProjectBackground
-          src={{ src: 'https://images.unsplash.com/photo-1508633069371-a735f885a1c7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=869&q=80' }}
+          src={{
+            src: 'https://images.unsplash.com/photo-1508633069371-a735f885a1c7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=869&q=80',
+          }}
           placeholder={usesBackgroundPlaceholder}
           opacity={0.7}
         />
@@ -57,12 +59,16 @@ export const Uses = () => {
               <Table>
                 <TableBody>
                   <TableRow>
-                  <TableHeadCell>November 2, 2019</TableHeadCell>
-                    <TableCell>Computer Problem Solving Competition IPB University</TableCell>
+                    <TableHeadCell>November 2, 2019</TableHeadCell>
+                    <TableCell>
+                      Computer Problem Solving Competition IPB University
+                    </TableCell>
                   </TableRow>
                   <TableRow>
-                  <TableHeadCell>October 15, 2021</TableHeadCell>
-                    <TableCell>Computer Problem Solving Competition IPB University</TableCell>
+                    <TableHeadCell>October 15, 2021</TableHeadCell>
+                    <TableCell>
+                      Computer Problem Solving Competition IPB University
+                    </TableCell>
                   </TableRow>
                 </TableBody>
               </Table>
@@ -76,18 +82,20 @@ export const Uses = () => {
               <ProjectSectionText as="div">
                 <List>
                   <ListItem>
-                  Recent JavaScript, JavaScript is my primary programming
-                    language.
+                    Recent JavaScript, I use JavaScript to build web app and mobile apps
+                    using React Native.
                   </ListItem>
                   <ListItem>
-                    HTML and CSS
+                    Dart, Dart is a programming language to build high-quality apps
                   </ListItem>
+                  <ListItem>HTML and CSS</ListItem>
                   <ListItem>
-                    <Link href="https://reactjs.org/">React JS</Link> and <Link href="https://reactnative.dev/">React Native</Link>
+                    <Link href="https://reactjs.org/">React JS</Link>
+                    {', '}
+                    <Link href="https://reactnative.dev/">React Native</Link>
+                    {', '}And <Link href="https://flutter.dev/">Flutter</Link>
                   </ListItem>
-                  <ListItem>
-                    Figma and Adobe Xd for UI Design
-                  </ListItem>
+                  <ListItem>Figma and Adobe Xd for UI Design</ListItem>
                 </List>
               </ProjectSectionText>
             </ProjectTextRow>
@@ -100,7 +108,10 @@ export const Uses = () => {
               <ProjectSectionText as="div">
                 <List>
                   <ListItem>
-                   Git, Git is a modern distributed Version Control System for source code. I use Git everyday and all my projects are tracked with a Git version. I host my projects on private GitHub repositories and track related issues on the GitHub issue tracker.
+                    Git, Git is a modern distributed Version Control System for source
+                    code. I use Git everyday and all my projects are tracked with a Git
+                    version. I host my projects on private GitHub repositories and track
+                    related issues on the GitHub issue tracker.
                   </ListItem>
                 </List>
               </ProjectSectionText>
@@ -136,7 +147,7 @@ export const Uses = () => {
               <Table>
                 <TableBody>
                   <TableRow>
-                  <TableHeadCell>Frontend Masters</TableHeadCell>
+                    <TableHeadCell>Frontend Masters</TableHeadCell>
                     <TableHeadCell>
                       <Link href="https://github.com/getify">Kyle Simpson</Link>
                     </TableHeadCell>
@@ -159,7 +170,9 @@ export const Uses = () => {
                   <TableRow>
                     <TableHeadCell>Harvard CS50</TableHeadCell>
                     <TableHeadCell>
-                      <Link href="https://www.instagram.com/davidjmalan/?hl=en">David J. Malan</Link>
+                      <Link href="https://www.instagram.com/davidjmalan/?hl=en">
+                        David J. Malan
+                      </Link>
                     </TableHeadCell>
                     <TableCell>Introduction to Computer Science</TableCell>
                   </TableRow>

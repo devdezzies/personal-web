@@ -4,12 +4,12 @@ import gamestackTexture2 from 'assets/home-readin.png';
 import gamestackTextureLarge from 'assets/readin-2.png';
 import gamestackTexturePlaceholder from 'assets/gamestack-login-placeholder.jpg';
 import gamestackTexture from 'assets/readin-2.png';
-import sliceTextureLarge from 'assets/slice-app-large.jpg';
-import sliceTexturePlaceholder from 'assets/slice-app-placeholder.jpg';
-import sliceTexture from 'assets/slice-app.jpg';
-import sprTextureLarge from 'assets/spr-lesson-builder-dark-large.jpg';
-import sprTexturePlaceholder from 'assets/spr-lesson-builder-dark-placeholder.jpg';
-import sprTexture from 'assets/spr-lesson-builder-dark.jpg';
+//import sliceTextureLarge from 'assets/slice-app-large.jpg';
+//import sliceTexturePlaceholder from 'assets/slice-app-placeholder.jpg';
+//import sliceTexture from 'assets/slice-app.jpg';
+//import sprTextureLarge from 'assets/spr-lesson-builder-dark-large.jpg';
+//import sprTexturePlaceholder from 'assets/spr-lesson-builder-dark-placeholder.jpg';
+//import sprTexture from 'assets/spr-lesson-builder-dark.jpg';
 import { Footer } from 'components/Footer';
 import { Meta } from 'components/Meta';
 import { Intro } from 'layouts/Home/Intro';
@@ -17,7 +17,7 @@ import { Profile } from 'layouts/Home/Profile';
 import { ProjectSummary } from 'layouts/Home/ProjectSummary';
 import { useEffect, useRef, useState } from 'react';
 import styles from './Home.module.css';
-const disciplines = ['Student', 'Prototyper'];
+const disciplines = ['Student', 'AI Enthusiast'];
 
 export const Home = () => {
   const [visibleSections, setVisibleSections] = useState([]);
@@ -81,8 +81,8 @@ export const Home = () => {
         visible={visibleSections.includes(details.current)}
         id="details"
       />
-      
-       <ProjectSummary
+
+      <ProjectSummary
         id="project-1"
         alternate
         sectionRef={projectOne}

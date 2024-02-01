@@ -21,11 +21,23 @@ const ProfileText = ({ visible, titleId }) => (
       <DecoderText text="Hi there 👋" start={visible} delay={500} />
     </Heading>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-    Hello, my name is Abdullah, and I currently reside in Indonesia where I am actively working on a personal project at{' '}
-      <Link href="https://play.google.com/store/apps/dev?id=7355009604149943956&hl=%3Did_id&gl=id">bite.</Link>. As a technology and science enthusiast, I have a strong passion for coding and devouring non-fiction books. I am recently venturing into the realm of mobile development, honing my skills as a Frontend Engineer with a focus on creating visually appealing UI designs and interactive features that align with modern mobile app trends.
+      Hello, my name is Abdullah, and I currently reside in Indonesia where I am actively
+      working on a personal project at{' '}
+      <Link href="https://play.google.com/store/apps/dev?id=7355009604149943956&hl=%3Did_id&gl=id">
+        Xplora.
+      </Link>{' '}
+      As a technology and science enthusiast, I have a strong passion for coding and
+      devouring non-fiction books. I am recently venturing into the realm of mobile
+      development, honing my skills as a Frontend Engineer with a focus on creating
+      visually appealing UI designs and interactive features that align with modern mobile
+      app trends.
     </Text>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-    In my leisure time, I indulge in a combination of high-intensity cardio and weightlifting, as well as indulging in my love for literature and cinema. When it comes to books, I have a soft spot for biographies and motivational works, while my movie preferences lean towards action-packed thrillers. I'm always eager to expand my horizons, so don't hesitate to share your latest and greatest projects with me.
+      In my leisure time, I indulge in a combination of high-intensity cardio and
+      weightlifting, as well as indulging in my love for literature and cinema. When it
+      comes to books, I have a soft spot for biographies and motivational works, while my
+      movie preferences lean towards action-packed thrillers. I am always eager to expand
+      my horizons, so do not hesitate to share your latest and greatest projects with me.
     </Text>
   </Fragment>
 );
