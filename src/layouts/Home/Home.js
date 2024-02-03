@@ -24,12 +24,12 @@ export const Home = () => {
   const [scrollIndicatorHidden, setScrollIndicatorHidden] = useState(false);
   const intro = useRef();
   const projectOne = useRef();
-  const projectTwo = useRef();
-  const projectThree = useRef();
+  // const projectTwo = useRef();
+  // const projectThree = useRef();
   const details = useRef();
 
   useEffect(() => {
-    const sections = [intro, projectOne, projectTwo, projectThree, details];
+    const sections = [intro, projectOne, details];
 
     const sectionObserver = new IntersectionObserver(
       (entries, observer) => {
@@ -81,7 +81,6 @@ export const Home = () => {
         visible={visibleSections.includes(details.current)}
         id="details"
       />
-
       <ProjectSummary
         id="project-1"
         alternate
@@ -92,56 +91,6 @@ export const Home = () => {
         description="Design and development for a news app in React Native"
         buttonText="View project"
         buttonLink="/projects/readin" // -> /projects/smart-sparrow
-        model={{
-          type: 'phone',
-          alt: 'App login screen',
-          textures: [
-            {
-              srcSet: [gamestackTexture, gamestackTextureLarge],
-              placeholder: gamestackTexturePlaceholder,
-            },
-            {
-              srcSet: [gamestackTexture2, gamestackTexture2Large],
-              placeholder: gamestackTexture2Placeholder,
-            },
-          ],
-        }}
-      />
-      <ProjectSummary
-        id="project-2"
-        alternate
-        sectionRef={projectTwo}
-        visible={visibleSections.includes(projectTwo.current)}
-        index={2}
-        title="ReadIn - Modern News App"
-        description="Design and development for a news app in React Native"
-        buttonText="View website"
-        buttonLink="/projects/readin" // -> /projects/smart-sparrow
-        model={{
-          type: 'phone',
-          alt: 'App login screen',
-          textures: [
-            {
-              srcSet: [gamestackTexture, gamestackTextureLarge],
-              placeholder: gamestackTexturePlaceholder,
-            },
-            {
-              srcSet: [gamestackTexture2, gamestackTexture2Large],
-              placeholder: gamestackTexture2Placeholder,
-            },
-          ],
-        }}
-      />
-      <ProjectSummary
-        id="project-3"
-        alternate
-        sectionRef={projectThree}
-        visible={visibleSections.includes(projectThree.current)}
-        index={3}
-        title="ReadIn - Modern News App"
-        description="Design and development for a news app in React Native"
-        buttonText="View website"
-        buttonLink="/" // -> /projects/smart-sparrow
         model={{
           type: 'phone',
           alt: 'App login screen',
