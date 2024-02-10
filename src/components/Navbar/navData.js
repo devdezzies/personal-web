@@ -1,28 +1,31 @@
 export const navLinks = [
   {
-    label: 'Projects',
-    pathname: '/#project-1',
-  },
-  {
     label: 'Details',
     pathname: '/#details',
   },
   {
+    label: 'Projects',
+    pathname: '/#project-1',
+  },
+  {
     label: 'Articles',
     pathname: '/articles',
+  },
+  {
+    label: 'Skills',
+    pathname: '/Skills',
+  },
+  {
+    label: 'Contact',
+    pathname: '/Contact',
   },
 ];
 
 export const socialLinks = [
   {
     label: 'Twitter',
-    url: 'https://twitter.com/nix',
+    url: 'https://twitter.com/nixrelish',
     icon: 'twitter',
-  },
-  {
-    label: 'Figma',
-    url: 'https://www.figma.com/@Hamish',
-    icon: 'figma',
   },
   {
     label: 'Github',

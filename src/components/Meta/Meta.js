@@ -1,8 +1,8 @@
 import Head from 'next/head';
 
 const siteUrl = process.env.NEXT_PUBLIC_WEBSITE_URL;
-const name = 'Hamish Williams';
-const twitterHandle = '@hamishMW';
+const name = 'Abdullah';
+const twitterHandle = '@nixrelish';
 const defaultOgImage = `${siteUrl}/social-image.png`;
 
 export const Meta = ({ title, description, prefix = name, ogImage = defaultOgImage }) => {
@@ -13,6 +13,10 @@ export const Meta = ({ title, description, prefix = name, ogImage = defaultOgIma
       <title key="title">{titleText}</title>
       <meta key="description" name="description" content={description} />
       <meta name="author" content={name} />
+      <meta
+        name="google-site-verification"
+        content="RAO_I66beOdSsfylT3eO-p3KKm5fC2lxD7-LaXKQLDs"
+      />
 
       <meta property="og:image" content={ogImage} />
       <meta property="og:image:alt" content="Banner for the site" />

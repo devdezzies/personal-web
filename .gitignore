@@ -64,3 +64,6 @@ public/draco/
 public/og
 .serverless
 .next
+
+# Local Netlify folder
+.netlify

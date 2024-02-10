@@ -149,7 +149,6 @@ const ImageElements = ({
       {isVideo && hasMounted && (
         <Fragment>
           <video
-            muted
             loop
             playsInline
             className={styles.element}
