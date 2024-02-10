@@ -13,6 +13,10 @@ export const Meta = ({ title, description, prefix = name, ogImage = defaultOgIma
       <title key="title">{titleText}</title>
       <meta key="description" name="description" content={description} />
       <meta name="author" content={name} />
+      <meta
+        name="google-site-verification"
+        content="RAO_I66beOdSsfylT3eO-p3KKm5fC2lxD7-LaXKQLDs"
+      />
 
       <meta property="og:image" content={ogImage} />
       <meta property="og:image:alt" content="Banner for the site" />
