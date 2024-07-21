@@ -1,0 +1,457 @@
+---
+title: Digging into Fundamentals JavaScript
+abstract: understanding basic JavaScript
+date: '2022-07-17'
+banner: https://vid-share.s3.us-east-1.wasabisys.com/SIfS74kxjD.mp4
+---
+
+JavaScript was invented in 1995 by [Brendan Eich](https://en.wikipedia.org/wiki/Brendan_Eich). and until now, JavaScript still
+at the top as the most popular language in the world. JavaScript is used to create a functionality and behaviors for website,
+JavaScript runs on computer within browser and recently Node.js has allowed JavaScript to execute code on servers.
+
+## Why JavaScript?
+
+JavaScript relatively easy to learn, and also has a big community around the world to help us communicating anything about
+JavaScript topics, you can easily found free courses on the internet to learn JavaScript, e.g. FreeCodeCamp, Exercism and YouTube.
+
+So, how to start learning JavaScript effectively?. The quick answer about this question is to **start coding**. You can't understand
+about any programming languages if you don't start to get into the problem and solve it by yourself. 
+
+So, before you start to **really** learning JavaScript you have to understand some Fundamentals about this language.
+
+
+```js
+///////////////////////////    VALUES     /////////////////////////////////
+
+42 // Integer
+3.14 //Flow (decimal)
+
+"Hello, friend" // String you can use "" or '' both are same
+
+true // Boolean
+false
+
+null // To say it's empty 
+undefined
+
+[1, 2, 3] // Array, start from 0 index to x index, the number 3 at position 2 or index 2
+{ name: "Abdullah" } // An object and "Abdullah" is the value of name object
+
+// primitive (primitive value, primitive data type) is data that is not an object and has no methods or properties. There are 7 primitive data types: string, number, bigint, boolean, undefined, symbol, and null.
+
+///////////////////////////    OPERATIONS     /////////////////////////////////
+
+3 + 4 // binary operators
+43 - 1 // binary operators (like plus and minus)
+
+"Kyle" + "Simpson" // -> 'Kyle Simpson'
+
+!false //unary operator, it means single operand involved in the operation
+
+3.0 == 3 // comparison using Lucy quality operator (double equals)
+
+3 < 4 // comparison
+
+true || false // or operator 
+
+///////////////////////////    TYPES     /////////////////////////////////
+
+typeof 42 // number
+
+typeof "kyle" // string
+
+typeof true //boolean
+
+typeof undefined // undefined
+
+typeof { age: 39 } // object
+
+typeof null // object (but empty)
+
+typeof [1,2,3] // object (because inside an array are subtype which is an object)
+
+///////////////////////////    VARIABLES     /////////////////////////////////
+
+var name = "Kyle Simpson"; // ; it's a semicolon that is denoting that we finished a statement
+
+var age; // create a empty variable
+age = 39; // and put value 39 to variable age
+
+var friends = ["Brandon", "Marc"];
+
+console.log( friends.length ); // 2
+console.log( friends[1] ); // Marc
+
+var age = 39;
+ 
+age++; // age is equal to age plus 1
+age += 2; // the += allows it to tell it how much we wanna increment
+
+age; //42
+
+///////////////////////////    EXPRESSION AND STATEMENTS     /////////////////////////////////
+
+var age = 39;
+
+age = 1 + (age * 2);
+
+age; //79
+
+///////////////////////////    IF AND ELSE     /////////////////////////////////
+
+var age = 39;
+
+if (age >= 18) {
+    goVote();
+}
+
+/////////////////////
+
+if (isEnrolled()) {
+    takeClass();
+}
+else {
+    enrollFirst();
+}
+
+/////////////////////
+
+var isEnrolled = true;
+
+if(isEnrolled) {
+    console.log("Take the class!");
+}
+else {
+    console.log("Enroll First");
+}
+
+//Take the class!
+
+///////////////////////////    lOOPS     /////////////////////////////////
+
+var students = [ "Matt", "Sarah", "Susan" ];
+
+while (students.length > 0 ) { // all of the students that has position greater than 0 (Matt, sarah, and susan)
+    let student = students.pop();
+    console.log(`Hello, ${student}!`); // `` it called interpolated string
+}
+
+///////////////////////////    FUNCTIONS     /////////////////////////////////
+
+function timeRemaining(timeElapsed, endTime) { 
+    return endTime - timeElapsed;
+}
+
+var left = timeRemaining(42, 240); // The formula will takes 42 as timeElapsed and 240 and endTime and count those and give the return following by the function timeRemaining that we had defined it before
+
+left; // 198
+```
+
+## Types and Coercion
+
+Types and Coercion 
+
+1. *Primitive Types*
+2. **Converting Types**
+3. **Checking Equality**
+
+```js
+///////////////////////////    NaN     /////////////////////////////////
+
+var greeting = "Hello, class!";
+
+var something = greeting / 2;
+
+something;  // NaN (Not a Number)
+Number.isNaN( something );  // true
+
+Number.isNaN ( greeting );  // false 
+
+///////////////////////////    COERCION (String concatenation -> number to string)     /////////////////////////////////
+
+var msg1 = "There are";
+var numStudents = 16;
+var msg2 = "students."
+console.log(msg1 + numStudents + msg2);  // the plus operators doing concatenate that converted 16 to string
+
+// "There are 16 students."
+
+var numStudents = 16;
+
+console.log(
+    `There are ${numStudents+""} students.` // empty string is to convert something to a string
+);
+
+// "There are 16 students."
+
+// Number + Number = Number
+// Number + String = String
+// String + Number = String
+// String + String = String
+
+///////////////////////////    COERCION (String concatenation -> string to number)     /////////////////////////////////
+
+var numStudents = "16";
+
+function addAStudent(numStudents) {
+    console.log(numStudents + 1);
+}
+
+addAStudent(
+    Number(numStudents)
+);
+
+// 17
+
+///////////////////////////    BOOLEANS     /////////////////////////////////
+
+if (studentsInputElem.value) {  // as default if we just put only if statement so it means true 
+    numStudents = Number(studentsInputElem.value);
+}
+
+// NOTES: 
+// Useful: when the reader (user) is focused on what's important 
+// Dangerous: when the reader (user) can't tel what will happen
+// Better: when the reader understands the code
+
+///////////////////////////    EQUALITY     /////////////////////////////////
+
+// == allows coercion (types can be different)
+// === disallows coercion (types must be same)
+
+var studentName1 = "Frank";
+var studentName2 = `${studentName1}`;
+
+var workshopEnrollment1 = 16;
+var workshopEnrollment2 = workshopEnrollment1 + 0;
+
+studentName1 == studentName2  // true 
+studentName1 === studentName2  // true (same type)
+
+workshopEnrollment1 == workshopEnrollment2  // true
+workshopEnrollment1 === workshopEnrollment2  // true (same type)
+
+```
+
+**Primitive Types:**
+
+1. Undefined
+2. String
+3. Number 
+4. Boolean
+5. object
+6. symbol
+7. null (also primitive type)
+
+> In JavaScript, variables don't have types, values do
+
+```js
+var v;
+typeof v;  // undefined
+
+v = "1";
+typeof v;  // string
+
+v = 2;
+typeof v;  // number
+
+v = true;
+typeof v;  // boolean
+
+v = {};
+typeof v;  // object
+
+v = Symbol();
+typeof v;  // symbol
+
+typeof doesntExist;  // undefined
+
+var v = null;
+typeof v;   // object (this is an histrorical BUG in JavaScript)
+
+v = function(){};
+typeof v;  // function
+
+v = [1, 2, 3];
+typeof v;  // object (subtype of the object there)
+
+```
+
+## Fundamentals Object in JavaScript
+
+use new -->
+
+1. **Object()**
+2. **Array()**
+3. **Function()**
+4. **Date()**
+5. **RegExp()**
+6. **Error()**
+
+don't use new -->
+
+1. **String**
+2. **Number**
+3. **Boolean**
+
+```js
+var yesterday = new Date("March 6, 2019");   <--- Use "new"
+yesterday.toUTCString();
+
+// Wed, 06 Mar 2019 06:00:00 GMT   
+
+var myGPA = String(transcript.gpa);   <--- Don't use "new"
+
+// 3.54
+```
+
+```js
+// SCOPE: WHERE TO LOOK FOR THINGS
+
+///////////////////////////    SCOPE     /////////////////////////////////
+
+var teacher = "Kyle";
+
+function otherClass() {
+    teacher = "Suzy";  // gonna end up pointing at the variable out in the outer scope
+    topic = "React";   // it creates the variable in the global scope
+    console.log("Welcome");
+}
+
+otherClass();  // welcome
+
+console.log(teacher);  // Suzy
+console.log(topic);   // React
+
+///////////////////////////    FUNCTION EXPRESSIONS     /////////////////////////////////
+
+var clickHandler = function(){  // anonymous function expression
+        // ..
+};
+
+var keyHandler = function keyHandler(){  // named function expression
+    // ..
+}
+
+/////////////////
+
+var ids = people.map(function getId(person){   // named function expression (recommended)
+    return person.id;
+});
+
+
+var ids = people.map(person => person.id);  // anonymous function expression
+
+///////////////////////////    IIFEs     /////////////////////////////////
+
+var teacher = "Kyle";
+
+( function anotherTeacher() {
+    var teacher = "Suzy";
+    console.log(teacher);   // Suzy [Function Scoping] the variable is only available to call inside of that function
+}) (); // it's immediately getting executed
+
+console.log(teacher);   // Kyle
+
+///////////////////////////    BLOCK SCOPING     /////////////////////////////////
+
+var teacher = "Kyle";
+
+{
+    let teacher = "Suzy";
+    console.log(teacher);  // Suzy
+}
+
+console.log(teacher);  // Kyle
+
+/////////////////
+
+function diff(x,y) {
+    if(x > y) {
+        let tmp = x;
+        x = y;
+        y = tmp;
+    }
+
+    return y - x;
+}
+
+///////////////////////////    CLOSURE     /////////////////////////////////
+
+// CLOSURE is when a function "remembers" the variables outside of it, even if you pass that function elsewhere
+
+function ask(question) {
+    setTimeout(function waitAsec(){
+        console.log(question);
+    },100);
+}
+
+ask("What is closure?");
+// what is closure?
+
+/////////////////
+
+function ask(question) {
+    return function holdYourQuestion(){
+        console.log(question);
+    }
+}
+
+var myQuestion = ask("What is closure?");
+
+myQuestion();  // What is closure?
+
+```
+
+```js
+///////////////////////////    this     /////////////////////////////////
+
+// A function's "this" references the execution context for that call, determined entirely by how the function was called.
+
+var workshop = {
+    teacher = "Kyle",
+    ask(question) {
+        console.log(this.teacher, question);
+    }
+}
+
+workshop.ask("What is implicit binding?");
+//  Kyle What is implicit binding?
+
+/////////////////
+
+function ask(question) {
+    console.log(this.teacher, question);   // one function that can be reused against a lot of different contexts
+}
+
+function otherClass() {
+    var myContext = {
+        teacher: "Suzy"
+    };
+    ask.call(myContext, "Why");  // Suzy Why?
+}
+
+otherClass();
+
+
+// instead of using myContext.ask, here we just said ask.call, and we gave it an object to use for this keyword
+
+///////////////////////////    PROTOTYPES     /////////////////////////////////
+
+function Workshop(teacher) {
+    this.teacher = teacher;
+}
+Workshop.protoype.ask = function(question) {
+    console.log(this.teacher, question);
+};
+
+var deepJS = new Workshop("Kyle");
+var reactJS = new Workshop("Suzy");
+
+deepJS.ask("Is 'protoype' a class?");
+//  Kyle is 'prototype' a class?
+
+reactJS.ask("Isn't 'prototype' ugly?");
+// Suzy Isn't 'prototype' ugly?
+
+```

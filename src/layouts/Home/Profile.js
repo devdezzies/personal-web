@@ -1,7 +1,7 @@
 import profileKatakana from 'assets/katakana-profile.svg?url';
-import profileImgLarge from 'assets/profile-larg.jpg';
-import profileImgPlaceholder from 'assets/profile-placeholder.jpg';
-import profileImg from 'assets/profile.jpg';
+import profileImgLarge from 'assets/profil.png';
+import profileImgPlaceholder from 'assets/profile-placeholder.png';
+import profileImg from 'assets/profil.png';
 import { Button } from 'components/Button';
 import { DecoderText } from 'components/DecoderText';
 import { Divider } from 'components/Divider';
@@ -18,17 +18,26 @@ import styles from './Profile.module.css';
 const ProfileText = ({ visible, titleId }) => (
   <Fragment>
     <Heading className={styles.title} data-visible={visible} level={3} id={titleId}>
-      <DecoderText text="Hi there" start={visible} delay={500} />
+      <DecoderText text="Hi there 👋" start={visible} delay={500} />
     </Heading>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-      I'm Abdullah, currently I live in Indonesia working on my personal project at{' '}
-      <Link href="https://play.google.com/store/apps/dev?id=7355009604149943956&hl=%3Did_id&gl=id">bite.</Link>. Focusing on Mobile
-      development and mobile UI Design. Loves to learn JavaScript deeply and creating modern mobile apps. If you have a great idea about mobile app, let me help you
-      to make it real <Link href="/articles">contact</Link>.
+      Hello, my name is Abdullah, and I currently reside in Indonesia where I am actively
+      working on a personal project at{' '}
+      <Link href="https://play.google.com/store/apps/dev?id=7355009604149943956&hl=%3Did_id&gl=id">
+        Xplora.
+      </Link>{' '}
+      As a technology and science enthusiast, I have a strong passion for coding and
+      devouring non-fiction books. I am recently venturing into the realm of mobile
+      development, honing my skills as a Frontend Engineer with a focus on creating
+      visually appealing UI designs and interactive features that align with modern mobile
+      app trends.
     </Text>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-      In my spare time I like boxing and exercising, reading and watch movies. I’m always down for hearing
-      about new projects, so feel free to drop me a line.
+      In my leisure time, I indulge in a combination of high-intensity cardio and
+      weightlifting, as well as indulging in my love for literature and cinema. When it
+      comes to books, I have a soft spot for biographies and motivational works, while my
+      movie preferences lean towards action-packed thrillers. I am always eager to expand
+      my horizons, so do not hesitate to share your latest and greatest projects with me.
     </Text>
   </Fragment>
 );
@@ -82,7 +91,7 @@ export const Profile = ({ id, visible, sectionRef }) => {
                   placeholder={profileImgPlaceholder}
                   srcSet={[profileImg, profileImgLarge]}
                   sizes={`(max-width: ${media.mobile}px) 100vw, 480px`}
-                  alt="Me standing in front of the Torii on Miyajima, an island off the coast of Hiroshima in Japan"
+                  alt="Me on graduation party in high school"
                 />
                 <svg
                   aria-hidden="true"
